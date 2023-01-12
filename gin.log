@@ -19,7 +19,8 @@
 [GIN-debug] POST   /cash/callback            --> mock_server/controllers.CashCallback.func1 (3 handlers)
 [GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
 Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
-[GIN-debug] Listening and serving HTTP on :8090
-[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
-Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
-[GIN-debug] Listening and serving HTTP on 127.0.0.1:8080
+[GIN-debug] Listening and serving HTTP on :8008
+[GIN] 2023/01/12 - 14:54:46 | 202 |     210.792µs |     10.51.0.162 | POST     "/cash/callback"
+[GIN] 2023/01/12 - 14:54:47 | 202 |      97.042µs |     10.51.0.162 | POST     "/cash/callback"
+[GIN] 2023/01/12 - 14:55:43 | 202 |     200.541µs |     10.51.0.162 | POST     "/cash/callback"
+[GIN] 2023/01/12 - 15:05:47 | 404 |       1.125µs |   1.204.204.129 | GET      "/"
