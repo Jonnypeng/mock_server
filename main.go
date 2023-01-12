@@ -54,6 +54,6 @@ func main() {
 		panic(err.Error())
 	}
 	r := setupRouter()
-	r.Run(":8080")
+	r.Run(":8090")
 	r.Run(cfg.AppHost + ":" + cfg.AppPort)
 }
