@@ -1,4 +1,4 @@
-module house_system_backend
+module mock_server
 
 go 1.18
 
