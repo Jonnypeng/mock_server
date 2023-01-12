@@ -1,0 +1,35 @@
+# 此工作流使用未经 GitHub 认证的操作。
+# 它们由第三方提供，并受
+# 单独的服务条款、隐私政策和支持
+# 文档管理。
+
+# GitHub recommends pinning actions to a commit SHA.
+# To get a newer version, you will need to update the SHA.
+# You can also reference a tag or branch, but the action may change without warning.
+
+name: CI 
+
+on:
+  push:
+    branches:
+      - develop
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 
+        uses: actions/checkout@v3
+      - id: docker-publish
+        name: Build image
+        uses: bitovi/github-actions-docker-publish@v1.0.2
+        with:
+          docker_username: ${{ secrets.DOCKER_HUB_NAME }}
+          docker_password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+          checkout: 'false'
+          image_tag: develop
+          sha: 'true' # won't do anything since image_tag is set
+          org_name: jonnypeng
+          repo_name: mock_server 
+      - run: |
+          echo "Image Created:  ${{ env.image }}"
+          echo "Tag Created: ${{ env.tag }}"
