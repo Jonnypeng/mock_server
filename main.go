@@ -3,12 +3,20 @@ package main
 import (
 	"house_system_backend/controllers"
 	"house_system_backend/utils"
+	"io"
+	"os"
 
 	"github.com/gin-gonic/gin"
 )
 
 func setupRouter() *gin.Engine {
+
+	f, _ := os.Create("gin.log")
+	gin.DefaultWriter = io.MultiWriter(f, os.Stdout)
+
 	r := gin.Default()
+
+	// r.Use(middlewares.Cors())
 
 	// 检验请求是否有合法token
 	controllers.GetAuth(r)
