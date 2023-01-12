@@ -2,8 +2,8 @@ package controllers
 
 import (
 	"fmt"
-	"house_system_backend/model"
-	"house_system_backend/utils"
+	"mock_server/model"
+	"mock_server/utils"
 	"net/http"
 
 	"github.com/gin-gonic/gin"

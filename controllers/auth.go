@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"errors"
-	"house_system_backend/model"
+	"mock_server/model"
 	"net/http"
 	"strings"
 	"time"

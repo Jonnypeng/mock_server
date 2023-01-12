@@ -1,9 +1,9 @@
 package main
 
 import (
-	"house_system_backend/controllers"
-	"house_system_backend/utils"
 	"io"
+	"mock_server/controllers"
+	"mock_server/utils"
 	"os"
 
 	"github.com/gin-gonic/gin"
