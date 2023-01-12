@@ -4,11 +4,11 @@ WORKDIR /var/www/mock_server
 
 COPY . .
 
-RUN go build
+RUN go build 
 
 
 
-EXPOSE 8090
+EXPOSE 8008
 
 CMD ["./mock_server"]
 
