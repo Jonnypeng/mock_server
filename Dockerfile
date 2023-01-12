@@ -4,7 +4,7 @@ WORKDIR /var/www/mock_server
 
 COPY . .
 
-RUN go build .
+RUN go build
 
 
 

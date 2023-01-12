@@ -4,26 +4,19 @@
  - using env:	export GIN_MODE=release
  - using code:	gin.SetMode(gin.ReleaseMode)
 
-[GIN-debug] GET    /auth                     --> house_system_backend/controllers.GetAuth.func1 (4 handlers)
-[GIN-debug] POST   /user/register            --> house_system_backend/controllers.CreateUser.func1 (3 handlers)
-[GIN-debug] POST   /user/login               --> house_system_backend/controllers.UserLogin.func1 (3 handlers)
-[GIN-debug] GET    /user/info                --> house_system_backend/controllers.GetSingleUser.func1 (3 handlers)
-[GIN-debug] POST   /house/create             --> house_system_backend/controllers.CreateHouse.func1 (3 handlers)
-[GIN-debug] GET    /house/info               --> house_system_backend/controllers.GetSingleHouse.func1 (3 handlers)
-[GIN-debug] POST   /post/create              --> house_system_backend/controllers.CreatePost.func1 (3 handlers)
-[GIN-debug] GET    /post/info                --> house_system_backend/controllers.GetSinglePost.func1 (3 handlers)
-[GIN-debug] GET    /post/list                --> house_system_backend/controllers.GetPostList.func1 (3 handlers)
-[GIN-debug] POST   /order/create             --> house_system_backend/controllers.CreateOrder.func1 (3 handlers)
-[GIN-debug] GET    /order/info               --> house_system_backend/controllers.GetSingleOrder.func1 (3 handlers)
-[GIN-debug] POST   /order/complete           --> house_system_backend/controllers.CompleteOrder.func1 (3 handlers)
-[GIN-debug] POST   /cash/callback            --> house_system_backend/controllers.CashCallback.func1 (3 handlers)
+[GIN-debug] GET    /auth                     --> mock_server/controllers.GetAuth.func1 (4 handlers)
+[GIN-debug] POST   /user/register            --> mock_server/controllers.CreateUser.func1 (3 handlers)
+[GIN-debug] POST   /user/login               --> mock_server/controllers.UserLogin.func1 (3 handlers)
+[GIN-debug] GET    /user/info                --> mock_server/controllers.GetSingleUser.func1 (3 handlers)
+[GIN-debug] POST   /house/create             --> mock_server/controllers.CreateHouse.func1 (3 handlers)
+[GIN-debug] GET    /house/info               --> mock_server/controllers.GetSingleHouse.func1 (3 handlers)
+[GIN-debug] POST   /post/create              --> mock_server/controllers.CreatePost.func1 (3 handlers)
+[GIN-debug] GET    /post/info                --> mock_server/controllers.GetSinglePost.func1 (3 handlers)
+[GIN-debug] GET    /post/list                --> mock_server/controllers.GetPostList.func1 (3 handlers)
+[GIN-debug] POST   /order/create             --> mock_server/controllers.CreateOrder.func1 (3 handlers)
+[GIN-debug] GET    /order/info               --> mock_server/controllers.GetSingleOrder.func1 (3 handlers)
+[GIN-debug] POST   /order/complete           --> mock_server/controllers.CompleteOrder.func1 (3 handlers)
+[GIN-debug] POST   /cash/callback            --> mock_server/controllers.CashCallback.func1 (3 handlers)
 [GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
 Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
 [GIN-debug] Listening and serving HTTP on :8080
-[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
-Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
-[GIN-debug] Listening and serving HTTP on 127.0.0.1:8080
-[GIN] 2023/01/12 - 11:17:00 | 202 |     110.625µs |       127.0.0.1 | POST     "/cash/callback"
-[GIN] 2023/01/12 - 11:19:08 | 202 |      79.791µs |       127.0.0.1 | POST     "/cash/callback"
-[GIN] 2023/01/12 - 11:22:42 | 404 |           1µs |       127.0.0.1 | OPTIONS  "/cash/callback"
-[GIN] 2023/01/12 - 11:22:42 | 202 |     159.041µs |       127.0.0.1 | POST     "/cash/callback"
