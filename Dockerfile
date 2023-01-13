@@ -10,5 +10,5 @@ RUN go build
 
 EXPOSE 8008
 
-CMD ["./mock_server"]
+CMD ["mock_server"]
 
