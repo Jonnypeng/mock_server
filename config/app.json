@@ -1,0 +1,12 @@
+{
+	"app_name":"mock server",
+	"app_host":"127.0.0.1",
+	"app_port":"8008",
+	"database":{
+		"user":"root",
+		"password":"XXXXX",
+		"host":"rx1.xyz",
+		"port":"xxxxx",
+		"db_name":"xxxxxx"
+	}
+}
