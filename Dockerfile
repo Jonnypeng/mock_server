@@ -11,6 +11,6 @@ COPY . .
 
 RUN go build .
 
-EXPOSE 80
+EXPOSE 8008
 
 ENTRYPOINT ["./mock_server"]
