@@ -1,14 +1,16 @@
-FROM golang:alpine
+FROM golang:1.18
 
-WORKDIR /var/www/mock_server
+ENV GO111MODULE=on \
+    GOPROXY=https://goproxy.cn,direct \
+    GIN_MODE=release \
+    PORT=8008
+    
+WORKDIR /app
 
 COPY . .
 
 RUN go build .
 
+EXPOSE 80
 
-
-EXPOSE 8008
-
-CMD ["./mock_server"]
-
+ENTRYPOINT ["./mock_server"]
